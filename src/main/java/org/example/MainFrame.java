@@ -178,7 +178,6 @@ public class MainFrame extends JFrame{
     }
 
     private JButton getjButton(ArrayList<DiagnosticService> serviceArrayList, JScrollPane jScrollPane, MainFrame mainFrame) {
-        //
         JButton jButton1 = new JButton();
         jButton1.setBounds(LEFT_PADDING, 550, 100, 30);
         jButton1.setText("Generate");
