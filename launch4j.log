@@ -1,0 +1,20 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\PRP3CLJ\IdeaProjects\DiagraInterface\interface1.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\PRP3CLJ\IdeaProjects\DiagraInterface\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\RedHat\java-1.8.0-openjdk\
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RedHat\java-1.8.0-openjdk\missioncontrol\;C:\Program Files\RedHat\java-1.8.0-openjdk\webstart\;C:\Program Files\RedHat\java-1.8.0-openjdk\bin;C:\Program Files\RedHat\java-1.8.0-openjdk\jre\bin;C:\Oracle\Client32\bin;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\webstart\;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\bin;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\jre\bin;C:\Program Files\dotnet\;C:\Program Files\7-Zip;C:\Program Files (x86)\Toolbase Client;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-22\bin;C:\Users\PRP3CLJ\AppData\Local\Microsoft\WindowsApps;C:\Users\PRP3CLJ\AppData\Local\Programs\Git\cmd;C:\Users\PRP3CLJ\AppData\Local\GitHubDesktop\bin;C:\Program Files\RedHat\java-1.8.0-openjdk\\bin
+JRE paths:	C:\Program Files\RedHat\java-1.8.0-openjdk\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\RedHat\java-1.8.0-openjdk\missioncontrol\;C:\Program Files\RedHat\java-1.8.0-openjdk\webstart\;C:\Program Files\RedHat\java-1.8.0-openjdk\bin;C:\Program Files\RedHat\java-1.8.0-openjdk\jre\bin;C:\Oracle\Client32\bin;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\webstart\;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\bin;C:\Program Files (x86)\RedHat\java-1.8.0-openjdk\jre\bin;C:\Program Files\dotnet\;C:\Program Files\7-Zip;C:\Program Files (x86)\Toolbase Client;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-22\bin;C:\Users\PRP3CLJ\AppData\Local\Microsoft\WindowsApps;C:\Users\PRP3CLJ\AppData\Local\Programs\Git\cmd;C:\Users\PRP3CLJ\AppData\Local\GitHubDesktop\bin;C:\Program Files\RedHat\java-1.8.0-openjdk\\bin
+Check launcher:	C:\Program Files\RedHat\java-1.8.0-openjdk\bin\javaw.exe (OK)
+Version string: 1.008.000_422 / 64-Bit (OK)
+Launcher:	C:\Program Files\RedHat\java-1.8.0-openjdk\bin\javaw.exe
+Launcher args:	-jar "C:\Users\PRP3CLJ\IdeaProjects\DiagraInterface\interface1.exe"
+Args length:	67/32768 chars
+Exit code:	0
