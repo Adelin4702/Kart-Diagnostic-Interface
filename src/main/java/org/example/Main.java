@@ -65,20 +65,85 @@ public class Main {
     public static ArrayList<String> initExamples(){
         ArrayList<String> examples = new ArrayList<>();
 
-        examples.add("\n     REQUEST: 0x11 0x03 \n\n" +
-                "    RESPONSE: 0x51 0x03\n\n\n\n" +
+        examples.add("\n    REQUEST: 0x11 0x03 \n\n" +
+                "    RESPONSE: 0x51 0x03\n\n\n" +
                 "    Request:\n" +
                 "\tFirst byte: ECU Reset service(0x11)\n" +
                 "\tSecond byte: Reset type - Soft reset(0x03)\n\n" +
                 "    Response:\n" +
                 "\tFirst byte: Positive Response SID for service 0x11\n" +
                 "\tSecond byte: the reset type performed(Soft reset)");
-        examples.add("\n     REQUEST: 0x11 0x01 \n\n     RESPONSE: 0x7F 0x11 0x31");
-        examples.add("\n     REQUEST: 0x22 0x20 0x10  \n\n     RESPONSE: 0x62 0x20 0x10 0x1B 0x3C 0x70");
-        examples.add("\n     REQUEST: 0x2E 0x20 0x10 0x1B 0x3C 0x70 \n\n     RESPONSE: 0x6E 0x20 0x10");
-        examples.add("\n     REQUEST: 0x2E 0x02 0x50 0x00 0x01 0x02 0x50 \n\n     RESPONSE: 0x7F 0x2E 0x31");
-        examples.add("\n     REQUEST: 0x10 0x03 \n\n     RESPONSE: 0x50 0x03 0x00 0x32 0x01 0xF4");
-        examples.add("\n     REQUEST: 0x10 0x02 \n\n     RESPONSE: 0x7F 0x10 0x7F");
+
+
+        examples.add("\n    REQUEST: 0x11 0x01 \n\n" +
+                "    RESPONSE: 0x7F 0x11 0x22\n\n\n" +
+                "    Request:\n" +
+                "\tFirst byte: ECU Reset service(0x11)\n" +
+                "\tSecond byte: Reset type - Hard reset(0x01)\n\n" +
+                "    Response:\n" +
+                "\tFirst byte: Negative Response SID \n" +
+                "\tSecond byte: the requested service(Ecu Reset)\n" +
+                "\tThird byte: the Negative Response Code - Conditions\n\t       Not Correct(0x22)");
+
+
+        examples.add("\n    REQUEST: 0x22 0x20 0x10  \n\n" +
+                "    RESPONSE: 0x62 0x20 0x10 0x1B 0x3C 0x70\n\n\n" +
+                "    Request:\n" +
+                "\tFirst byte: Read Data by Identifier(0x22)\n" +
+                "\tSecond byte: Did High byte\n" +
+                "\tThird byte: Did Low byte\n\n" +
+                "    Response:\n" +
+                "\tFirst byte: Positive Response SID for service 0x22\n" +
+                "\tSecond byte: Did High byte\n" +
+                "\tThird byte: Did Low byte\n" +
+                "\tBytes 4 - 6: the data stored in did");
+
+
+        examples.add("\n    REQUEST: 0x2E 0x20 0x10 0x1B 0x3C 0x70 \n\n" +
+                "    RESPONSE: 0x6E 0x20 0x10\n\n\n" +
+                "    Request:\n" +
+                "\tFirst byte: Write Data by Identifier(0x2E)\n" +
+                "\tSecond byte: Did High byte\n" +
+                "\tThird byte: Did Low byte\n" +
+                "\tBytes 4 - 6: the data to be written in did\n\n"+
+                "    Response:\n" +
+                "\tFirst byte: Positive Response SID for service 0x2E\n" +
+                "\tSecond byte: Did High byte\n" +
+                "\tThird byte: Did Low byte\n" );
+
+
+        examples.add("\n    REQUEST: 0x2E 0x02 0x50 0x00 0x01 0x02 0x50 \n\n" +
+                "    RESPONSE: 0x7F 0x2E 0x33\n\n\n" +
+                "    Request:\n" +
+                "\tFirst byte: Write Data by Identifier(0x2E)\n" +
+                "\tSecond byte: Did High byte\n" +
+                "\tThird byte: Did Low byte\n" +
+                "\tBytes 4 - 6: the data to be written in did\n\n"+
+                "    Response:\n" +
+                "\tFirst byte: Negative Response SID\n" +
+                "\tSecond byte: the requested service(Write data by\n\t       identifier)\n" +
+                "\tThird byte: Negative Response Code - Security Access\n\t       Denied(0x33)\n" );
+
+
+        examples.add("\n    REQUEST: 0x10 0x03 \n\n" +
+                "    RESPONSE: 0x50 0x03 0x00 0x32 0x01 0xF4\n\n\n" +
+                "    Request:\n" +
+                "\tFirst byte: Diagnostic Session Control(0x10)\n" +
+                "\tSecond byte: Diagnostic Session Type - Extended S.\n\n" +
+                "    Response:\n" +
+                "\tFirst byte: Positive Response SID for service 0x10\n" +
+                "\tSecond byte: the Diagnostic Session Type(0x03)\n" +
+                "\tBytes 3 - 6: the Session Parameter Record\n" );
+
+
+        examples.add("\n    REQUEST: 0x10 0x02 \n\n" +
+                "    RESPONSE: 0x7F 0x10 0x22\n\n\n" +
+                "\tFirst byte: Diagnostic Session Control(0x10)\n" +
+                "\tSecond byte: Diagnostic Session Type - Programming\n\t       Session\n\n" +
+                "    Response:\n" +
+                "\tFirst byte: Negative Response SID\n" +
+                "\tSecond byte: the requested service(Diagnostic\n\t       Session Control)\n" +
+                "\tThird byte: Negative Response Code - Conditions not\n\t       correct(0x22)\n" );
 
         return examples;
     }
