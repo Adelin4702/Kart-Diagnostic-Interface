@@ -142,7 +142,7 @@ public class Main {
                 
                     REQUEST: 0x2E 0x02 0x50 0x00 0x01 0x02 0x50\s
                 
-                    RESPONSE: 0x7F 0x2E 0x33
+                    RESPONSE: 0x7F 0x2E 0x31
                 
                 
                     Request:
@@ -155,8 +155,8 @@ public class Main {
                 \tFirst byte: Negative Response SID
                 \tSecond byte: the requested service(Write data by
                 \t       identifier)
-                \tThird byte: Negative Response Code - Security Access
-                \t       Denied(0x33)
+                \tThird byte: Negative Response Code - Request Out of
+                \t       Range(0x31)
                 """);
 
 
