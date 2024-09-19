@@ -8,10 +8,10 @@ import java.util.ArrayList;
 public class MainFrame extends JFrame{
     private static final int TextFieldHeight = 30;
     private static final int TextFieldWidth = 180;
-    private static final int PADDING_X = 170;
+    private static final int PADDING_X = 160;
     private static final int PADDING_Y = 50;
     private static final int LEFT_PADDING = 50;
-    private static final int FAR_LEFT_PADDING = 650;
+    private static final int FAR_LEFT_PADDING = 640;
 
     private int selectedServiceIndex = 0;
     private final JLabel requestLabel;
@@ -50,7 +50,7 @@ public class MainFrame extends JFrame{
         panel.setOpaque(false); // Ensure the panel itself is transparent
 
         JScrollPane jScrollPane = new JScrollPane(panel);
-        jScrollPane.setBounds(LEFT_PADDING, 140, 500, 400);
+        jScrollPane.setBounds(LEFT_PADDING, 140, 495, 400);
         jScrollPane.setBorder(border);
         jScrollPane.setOpaque(false); // Ensure the scroll pane is transparent
         jScrollPane.getViewport().setOpaque(false); // Ensure the viewport is transparent
@@ -130,7 +130,7 @@ public class MainFrame extends JFrame{
 
         JTextArea example = new JTextArea();
         example.setEditable(false);
-        example.setBounds(FAR_LEFT_PADDING, 140, 470, 400);
+        example.setBounds(FAR_LEFT_PADDING, 140, 460, 400);
         example.setText("");
         example.setFont(new Font("Times new roman", Font.BOLD | Font.ITALIC, 16));
         example.setBorder(border);
@@ -152,7 +152,7 @@ public class MainFrame extends JFrame{
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 Graphics2D g2d = (Graphics2D) g.create();
-                ImageIcon icon = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Kart3.png")));
+                ImageIcon icon = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Kart3_1.png")));
                 g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.8f)); // 80% opacity
                 g2d.drawImage(icon.getImage(), 0, 0, getWidth(), getHeight(), this);
                 g2d.dispose();
@@ -232,4 +232,5 @@ public class MainFrame extends JFrame{
         text = "0x" + text;
         return text;
     }
+
 }

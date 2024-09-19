@@ -7,9 +7,6 @@ public class DiagnosticService {
     private short diagnosticServiceCode;
     private ArrayList<Attribute> diagnosticServiceAttributes;
 
-    public DiagnosticService() {
-    }
-
     public DiagnosticService(String diagnosticServiceName, short diagnosticServiceCode, ArrayList<Attribute> diagnosticServiceAttributes) {
         this.diagnosticServiceName = diagnosticServiceName;
         this.diagnosticServiceAttributes = diagnosticServiceAttributes;
